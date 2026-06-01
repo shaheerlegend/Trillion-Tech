@@ -1,32 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Trillion Tech | Global Steel Supply Chain &amp; Logistics</title>
-  <meta name="description" content="Trillion Tech is a premier global B2B steel supplier sourcing high-grade industrial steel directly from China. We supply steel plates, coils, pipes, and structural sections to businesses worldwide with reliable bulk export logistics." />
-  <meta name="keywords" content="B2B steel trading, global steel supply, industrial steel plates, Trillion Tech steel, bulk steel export, China steel supplier, steel coils wholesale, structural steel sections, steel pipe supplier, steel import export" />
-  <meta name="author" content="Trillion Tech" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://shaheerlegend.github.io/TrillionTech/" />
+  <meta name="description" content="Trillion Tech is a premier global B2B steel supplier sourcing high-grade industrial steel directly from China. We supply steel plates, coils, pipes, and structural sections to businesses worldwide with reliable bulk export logistics.">
+  <meta name="keywords" content="B2B steel trading, global steel supply, industrial steel plates, Trillion Tech steel, bulk steel export, China steel supplier, steel coils wholesale, structural steel sections, steel pipe supplier, steel import export">
+  <meta name="author" content="Trillion Tech">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://shaheerlegend.github.io/TrillionTech/">
 
-  <meta property="og:type"        content="website" />
-  <meta property="og:url"         content="https://shaheerlegend.github.io/TrillionTech/" />
-  <meta property="og:site_name"   content="Trillion Tech" />
-  <meta property="og:title"       content="Trillion Tech | Global Steel Supply Chain &amp; Logistics" />
-  <meta property="og:description" content="Premier global B2B steel supplier sourcing high-grade industrial steel directly from China." />
-  <meta property="og:image"       content="https://shaheerlegend.github.io/TrillionTech/assets/og-banner.jpg" />
-  <meta property="og:image:width"  content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt"   content="Trillion Tech — Global Steel Supply Chain &amp; Logistics" />
-  <meta property="og:locale"      content="en_US" />
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://shaheerlegend.github.io/TrillionTech/">
+  <meta property="og:site_name" content="Trillion Tech">
+  <meta property="og:title" content="Trillion Tech | Global Steel Supply Chain &amp; Logistics">
+  <meta property="og:description" content="Premier global B2B steel supplier sourcing high-grade industrial steel directly from China.">
+  <meta property="og:image" content="https://shaheerlegend.github.io/TrillionTech/assets/og-banner.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Trillion Tech — Global Steel Supply Chain &amp; Logistics">
+  <meta property="og:locale" content="en_US">
 
-  <meta name="twitter:card"        content="summary_large_image" />
-  <meta name="twitter:site"        content="@TrillionTech" />
-  <meta name="twitter:title"       content="Trillion Tech | Global Steel Supply Chain &amp; Logistics" />
-  <meta name="twitter:description" content="Premier global B2B steel supplier sourcing high-grade industrial steel directly from China." />
-  <meta name="twitter:image"       content="https://shaheerlegend.github.io/TrillionTech/assets/og-banner.jpg" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@TrillionTech">
+  <meta name="twitter:title" content="Trillion Tech | Global Steel Supply Chain &amp; Logistics">
+  <meta name="twitter:description" content="Premier global B2B steel supplier sourcing high-grade industrial steel directly from China.">
+  <meta name="twitter:image" content="https://shaheerlegend.github.io/TrillionTech/assets/og-banner.jpg">
 
   <script type="application/ld+json">
   {
@@ -50,9 +48,9 @@
   </script>
 
   <!-- Fonts: Bebas Neue (display) + DM Sans (body) — matching achievement portfolio -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,300&amp;display=swap" rel="stylesheet">
 
   <style>
     /* ============================================================
@@ -465,23 +463,134 @@
     body.edit-mode .contact-edit-hint { display: block; }
     body.edit-mode .contact-box { border-color: rgba(63,185,80,.2); }
 
+    /* ── ADDRESSES BLOCK ─── */
+    .contact-addresses {
+      grid-column: 1 / -1;
+      border-top: 1px solid var(--border);
+      padding-top: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .contact-addresses-label {
+      font-size: .66rem;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      margin-bottom: 2px;
+    }
+
+    .address-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 12px 24px;
+    }
+
+    .address-item {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 12px 14px;
+      position: relative;
+      transition: border-color var(--trans);
+    }
+    .address-item:hover { border-color: var(--border-hi); }
+
+    .address-pin {
+      color: var(--accent);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .address-text {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      flex: 1;
+    }
+
+    .address-tag {
+      font-size: .63rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .address-value {
+      font-size: .85rem;
+      color: var(--text);
+      font-weight: 500;
+      line-height: 1.5;
+    }
+
+    /* Delete address button (edit mode only) */
+    .btn-delete-address {
+      display: none;
+      position: absolute;
+      top: 8px; right: 8px;
+      background: rgba(248,81,73,.1);
+      border: 1px solid rgba(248,81,73,.28);
+      color: var(--danger);
+      width: 20px; height: 20px;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 12px;
+      line-height: 1;
+      transition: background var(--trans);
+      z-index: 2;
+    }
+    .btn-delete-address:hover { background: rgba(248,81,73,.26); }
+    body.edit-mode .btn-delete-address { display: flex; }
+
+    /* Add address button (edit mode only) */
+    .btn-add-address {
+      display: none;
+      align-items: center;
+      gap: 6px;
+      background: transparent;
+      border: 1px dashed var(--border-hi);
+      color: var(--text-muted);
+      padding: 8px 14px;
+      border-radius: var(--radius);
+      font-family: var(--font-body);
+      font-size: .76rem;
+      cursor: pointer;
+      transition: border-color var(--trans), color var(--trans), background var(--trans);
+      width: fit-content;
+      margin-top: 4px;
+    }
+    .btn-add-address:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: var(--accent-dim);
+    }
+    body.edit-mode .btn-add-address { display: flex; }
+
+    /* edit mode: green tint on address items */
+    body.edit-mode .address-item { border-color: rgba(63,185,80,.15); }
+
     @media (max-width: 640px) {
       .contact-box { grid-template-columns: 1fr; gap: 14px; }
       .contact-label { border-right: none; border-bottom: 1px solid var(--border); padding-right: 0; padding-bottom: 12px; }
     }
 
     /* ============================================================
-       SIX-COLUMN GRID
+       THREE-COLUMN GRID
     ============================================================ */
     .columns-grid {
       display: grid;
-      grid-template-columns: repeat(6, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 20px;
     }
-    @media (max-width: 1280px) { .columns-grid { grid-template-columns: repeat(4,1fr); } }
-    @media (max-width: 1100px) { .columns-grid { grid-template-columns: repeat(3,1fr); } }
-    @media (max-width: 900px)  { .columns-grid { grid-template-columns: repeat(2,1fr); } }
-    @media (max-width: 580px)  { .columns-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 900px) { .columns-grid { grid-template-columns: repeat(2,1fr); } }
+    @media (max-width: 580px) { .columns-grid { grid-template-columns: 1fr; } }
 
     /* ── COLUMN ─── */
     .column { display: flex; flex-direction: column; gap: 14px; }
@@ -945,7 +1054,7 @@
     }
   </style>
 </head>
-<body>
+<body class="">
 
 <!-- SAVE MODAL -->
 <div id="save-modal-overlay">
@@ -964,18 +1073,17 @@
 
 <!-- TOP NAVIGATION BAR -->
 <nav class="top-bar">
-  <div class="top-bar__logo" data-editable contenteditable="false">TRILLION TECH</div>
+  <div class="top-bar__logo" data-editable="" contenteditable="false">TRILLION TECH</div>
   <div class="top-bar__right">
-    <button id="admin-toggle-btn" aria-expanded="false">
+    <button id="admin-toggle-btn" aria-expanded="false" class="">
       <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor">
-        <path d="M8 1a3.5 3.5 0 0 0-3.5 3.5V6H3a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1h-1.5V4.5A3.5 3.5 0 0 0 8 1zm-2 5V4.5a2 2 0 1 1 4 0V6H6z"/>
+        <path d="M8 1a3.5 3.5 0 0 0-3.5 3.5V6H3a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1h-1.5V4.5A3.5 3.5 0 0 0 8 1zm-2 5V4.5a2 2 0 1 1 4 0V6H6z"></path>
       </svg>
-      Admin Login
-    </button>
-    <div id="admin-login-box">
+      Admin Login</button>
+    <div id="admin-login-box" class="">
       <span class="admin-login-label">Admin Password</span>
       <div class="pw-row">
-        <input type="password" id="admin-pw-input" placeholder="Enter password…" autocomplete="current-password" />
+        <input type="password" id="admin-pw-input" placeholder="Enter password…" autocomplete="current-password">
         <button id="admin-pw-submit">Enter</button>
       </div>
       <span id="admin-pw-error">Incorrect password.</span>
@@ -984,7 +1092,7 @@
 </nav>
 
 <!-- EDIT MODE BANNER -->
-<div id="edit-banner">
+<div id="edit-banner" class="">
   <span>✏ <strong>Edit Mode Active</strong> — Click any text to edit it directly.</span>
   <div class="banner-actions">
     <button class="btn-save-note" id="show-save-modal">How to Save</button>
@@ -997,108 +1105,136 @@
 
   <!-- HERO HEADER -->
   <header>
-    <p class="header-eyebrow" data-editable contenteditable="false">Global Steel Supply Chain</p>
-    <h1 class="company-name" id="company-name" data-editable contenteditable="false">TRILLION TECH</h1>
-    <hr class="hero-rule" />
-    <p class="company-tagline" id="company-tagline" data-editable contenteditable="false">Global Steel Supply Chain &amp; Logistics</p>
-    <p class="hero-desc" data-editable contenteditable="false">Premier B2B steel supplier sourcing high-grade industrial steel directly from China. Steel plates, coils, pipes &amp; structural sections — reliable bulk export worldwide.</p>
+    <p class="header-eyebrow" data-editable="" contenteditable="false">Global Steel Supply Chain</p>
+    <h1 class="company-name" id="company-name" data-editable="" contenteditable="false">TRILLION TECH</h1>
+    <hr class="hero-rule">
+    <p class="company-tagline" id="company-tagline" data-editable="" contenteditable="false">Global Steel Supply Chain &amp; Logistics</p>
+    <p class="hero-desc" data-editable="" contenteditable="false">Premier B2B steel supplier sourcing high-grade industrial steel directly from China. Steel plates, coils, pipes &amp; structural sections — reliable bulk export worldwide.</p>
   </header>
 
   <!-- CONTACT BOX -->
   <div class="section-meta" style="padding-top:36px;">
-    <h2 data-editable contenteditable="false">CONTACT</h2>
+    <h2 data-editable="" contenteditable="false">CONTACT</h2>
     <div class="section-line"></div>
   </div>
 
-  <div class="contact-box reveal">
+  <div class="contact-box reveal in-view">
     <span class="contact-edit-hint">✏ editable</span>
-    <div class="contact-label" data-editable contenteditable="false">Contact</div>
+    <div class="contact-label" data-editable="" contenteditable="false">Contact</div>
     <div class="contact-fields">
       <div class="contact-field">
-        <span class="contact-field-key" data-editable contenteditable="false">Company</span>
-        <span class="contact-field-value" data-editable contenteditable="false">Trillion Tech</span>
+        <span class="contact-field-key" data-editable="" contenteditable="false">Company</span>
+        <span class="contact-field-value" data-editable="" contenteditable="false">Trillion Tech</span>
       </div>
       <div class="contact-field">
-        <span class="contact-field-key" data-editable contenteditable="false">Address</span>
-        <span class="contact-field-value" data-editable contenteditable="false">123 Business Avenue, Suite 400<br>New York, NY 10001</span>
+        <span class="contact-field-key" data-editable="" contenteditable="false">Phone</span>
+        <span class="contact-field-value" data-editable="" contenteditable="false">+880-1770405924</span>
       </div>
       <div class="contact-field">
-        <span class="contact-field-key" data-editable contenteditable="false">Phone</span>
-        <span class="contact-field-value" data-editable contenteditable="false">+1 (555) 000-1234</span>
+        <span class="contact-field-key" data-editable="" contenteditable="false">Email</span>
+        <span class="contact-field-value" data-editable="" contenteditable="false">targetharvard987@gmail.com</span>
       </div>
       <div class="contact-field">
-        <span class="contact-field-key" data-editable contenteditable="false">Email</span>
-        <span class="contact-field-value" data-editable contenteditable="false">targetharvard987@gmail.com</span>
+        <span class="contact-field-key" data-editable="" contenteditable="false">Website</span>
+        <span class="contact-field-value" data-editable="" contenteditable="false">www.trilliontech.com</span>
       </div>
       <div class="contact-field">
-        <span class="contact-field-key" data-editable contenteditable="false">Website</span>
-        <span class="contact-field-value" data-editable contenteditable="false">www.trilliontech.com</span>
+        <span class="contact-field-key" data-editable="" contenteditable="false">Hours</span>
+        <span class="contact-field-value" data-editable="" contenteditable="false">Mon - Sat, 9:00 AM – 12:00 PM</span>
       </div>
-      <div class="contact-field">
-        <span class="contact-field-key" data-editable contenteditable="false">Hours</span>
-        <span class="contact-field-value" data-editable contenteditable="false">Mon – Fri, 9:00 AM – 6:00 PM</span>
-      </div>
+
+      <!-- ── ADDRESSES — add as many .address-item blocks as you need ── -->
+      <div class="contact-addresses">
+        <span class="contact-addresses-label">Office Locations</span>
+        <div class="address-list" id="address-list">
+
+          <!-- ADDRESS 1 — your real address -->
+          <div class="address-item">
+            <button class="btn-delete-address" title="Remove address" aria-label="Remove">✕</button>
+            <span class="address-pin">
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor">
+                <path d="M8 0a5 5 0 0 0-5 5c0 3.5 5 11 5 11s5-7.5 5-11a5 5 0 0 0-5-5zm0 7.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"></path>
+              </svg>
+            </span>
+            <div class="address-text">
+              <span class="address-tag" data-editable="" contenteditable="false">Head Office</span>
+              <span class="address-value" data-editable="" contenteditable="false">House 69, Road 7, Dhaka Cantonment, Dhaka 1206, Bangladesh.</span>
+            </div>
+          </div>
+
+          <!-- ADDRESS 2 — placeholder, edit or delete as needed -->
+          
+
+        </div><!-- /#address-list -->
+
+        <!-- Shown only in Edit Mode -->
+        <button class="btn-add-address" id="btn-add-address">
+          <svg width="11" height="11" viewBox="0 0 16 16" fill="currentColor"><path d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2z"></path></svg>
+          Add Address
+        </button>
+      </div><!-- /.contact-addresses -->
+
     </div>
   </div>
 
   <!-- PRODUCTS HEADING -->
   <div class="section-meta">
-    <h2 data-editable contenteditable="false">PRODUCTS</h2>
+    <h2 data-editable="" contenteditable="false">PRODUCTS</h2>
     <div class="section-line"></div>
-    <span class="section-count" id="product-count">18 items</span>
+    <span class="section-count" id="product-count">9 items</span>
   </div>
 
-  <!-- SIX-COLUMN PRODUCT GRID -->
+  <!-- THREE-COLUMN PRODUCT GRID -->
   <div class="columns-grid" id="columns-grid">
 
     <!-- COLUMN 1 -->
     <div class="column" id="col-1" data-col="1">
       <div class="column-header">
-        <span class="column-title" data-editable contenteditable="false">Category A</span>
+        <span class="column-title" data-editable="" contenteditable="false">Category A</span>
         <span class="column-badge">3</span>
       </div>
 
-      <div class="product-card reveal" data-index="01">
+      <div class="product-card reveal in-view" data-index="01">
         <button class="btn-delete-card" title="Delete" aria-label="Delete">✕</button>
-        <div class="product-title" data-editable contenteditable="false">Product Alpha</div>
-        <div class="product-desc" data-editable contenteditable="false">A brief description of Product Alpha. Highlight key features, specs, or benefits in a sentence or two.</div>
+        <div class="product-title" data-editable="" contenteditable="false">Product Alpha</div>
+        <div class="product-desc" data-editable="" contenteditable="false">A brief description of Product Alpha. Highlight key features, specs, or benefits in a sentence or two.</div>
         <div class="product-footer">
           <a class="attachment-link" href="#" target="_blank" rel="noopener">
-            <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4.5 3A2.5 2.5 0 0 0 2 5.5v6A2.5 2.5 0 0 0 4.5 14h7A2.5 2.5 0 0 0 14 11.5V7.707a1 1 0 0 0-.293-.707L10.293 3.5A1 1 0 0 0 9.586 3H4.5zm5.086 1L13 7.414V11.5a1 1 0 0 1-1 1h-7a1 1 0 0 1-1-1v-6A1 1 0 0 1 4.5 4h5.086zM9 4v3.5a.5.5 0 0 0 .5.5H13"/></svg>
+            <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4.5 3A2.5 2.5 0 0 0 2 5.5v6A2.5 2.5 0 0 0 4.5 14h7A2.5 2.5 0 0 0 14 11.5V7.707a1 1 0 0 0-.293-.707L10.293 3.5A1 1 0 0 0 9.586 3H4.5zm5.086 1L13 7.414V11.5a1 1 0 0 1-1 1h-7a1 1 0 0 1-1-1v-6A1 1 0 0 1 4.5 4h5.086zM9 4v3.5a.5.5 0 0 0 .5.5H13"></path></svg>
             View Attachment
           </a>
-          <span class="product-tag" data-editable contenteditable="false">PDF</span>
+          <span class="product-tag" data-editable="" contenteditable="false">PDF</span>
         </div>
       </div>
 
-      <div class="product-card reveal" data-index="02">
+      <div class="product-card reveal in-view" data-index="02">
         <button class="btn-delete-card" title="Delete" aria-label="Delete">✕</button>
-        <div class="product-title" data-editable contenteditable="false">Product Beta</div>
-        <div class="product-desc" data-editable contenteditable="false">Short description of Product Beta. You can mention pricing tier, compatibility, or target audience here.</div>
+        <div class="product-title" data-editable="" contenteditable="false">Product Beta</div>
+        <div class="product-desc" data-editable="" contenteditable="false">Short description of Product Beta. You can mention pricing tier, compatibility, or target audience here.</div>
         <div class="product-footer">
           <a class="attachment-link" href="#" target="_blank" rel="noopener">
-            <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4.5 3A2.5 2.5 0 0 0 2 5.5v6A2.5 2.5 0 0 0 4.5 14h7A2.5 2.5 0 0 0 14 11.5V7.707a1 1 0 0 0-.293-.707L10.293 3.5A1 1 0 0 0 9.586 3H4.5zm5.086 1L13 7.414V11.5a1 1 0 0 1-1 1h-7a1 1 0 0 1-1-1v-6A1 1 0 0 1 4.5 4h5.086zM9 4v3.5a.5.5 0 0 0 .5.5H13"/></svg>
+            <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4.5 3A2.5 2.5 0 0 0 2 5.5v6A2.5 2.5 0 0 0 4.5 14h7A2.5 2.5 0 0 0 14 11.5V7.707a1 1 0 0 0-.293-.707L10.293 3.5A1 1 0 0 0 9.586 3H4.5zm5.086 1L13 7.414V11.5a1 1 0 0 1-1 1h-7a1 1 0 0 1-1-1v-6A1 1 0 0 1 4.5 4h5.086zM9 4v3.5a.5.5 0 0 0 .5.5H13"></path></svg>
             View Attachment
           </a>
-          <span class="product-tag" data-editable contenteditable="false">DOC</span>
+          <span class="product-tag" data-editable="" contenteditable="false">DOC</span>
         </div>
       </div>
 
-      <div class="product-card reveal" data-index="03">
+      <div class="product-card reveal in-view" data-index="03">
         <button class="btn-delete-card" title="Delete" aria-label="Delete">✕</button>
-        <div class="product-title" data-editable contenteditable="false">Product Gamma</div>
-        <div class="product-desc" data-editable contenteditable="false">Description of Product Gamma. Keep it concise — one to three sentences works best for scannable cards.</div>
+        <div class="product-title" data-editable="" contenteditable="false">Product Gamma</div>
+        <div class="product-desc" data-editable="" contenteditable="false">Description of Product Gamma. Keep it concise — one to three sentences works best for scannable cards.</div>
         <div class="product-footer">
           <a class="attachment-link" href="#" target="_blank" rel="noopener">
-            <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4.5 3A2.5 2.5 0 0 0 2 5.5v6A2.5 2.5 0 0 0 4.5 14h7A2.5 2.5 0 0 0 14 11.5V7.707a1 1 0 0 0-.293-.707L10.293 3.5A1 1 0 0 0 9.586 3H4.5zm5.086 1L13 7.414V11.5a1 1 0 0 1-1 1h-7a1 1 0 0 1-1-1v-6A1 1 0 0 1 4.5 4h5.086zM9 4v3.5a.5.5 0 0 0 .5.5H13"/></svg>
+            <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4.5 3A2.5 2.5 0 0 0 2 5.5v6A2.5 2.5 0 0 0 4.5 14h7A2.5 2.5 0 0 0 14 11.5V7.707a1 1 0 0 0-.293-.707L10.293 3.5A1 1 0 0 0 9.586 3H4.5zm5.086 1L13 7.414V11.5a1 1 0 0 1-1 1h-7a1 1 0 0 1-1-1v-6A1 1 0 0 1 4.5 4h5.086zM9 4v3.5a.5.5 0 0 0 .5.5H13"></path></svg>
             View Attachment
           </a>
-          <span class="product-tag" data-editable contenteditable="false">XLS</span>
+          <span class="product-tag" data-editable="" contenteditable="false">XLS</span>
         </div>
       </div>
 
       <button class="btn-add-product" data-col="1">
-        <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2z"/></svg>
+        <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2z"></path></svg>
         Add Product
       </button>
     </div>
@@ -1106,51 +1242,51 @@
     <!-- COLUMN 2 -->
     <div class="column" id="col-2" data-col="2">
       <div class="column-header">
-        <span class="column-title" data-editable contenteditable="false">Category B</span>
+        <span class="column-title" data-editable="" contenteditable="false">Category B</span>
         <span class="column-badge">3</span>
       </div>
 
-      <div class="product-card reveal" data-index="04">
+      <div class="product-card reveal in-view" data-index="04">
         <button class="btn-delete-card" title="Delete" aria-label="Delete">✕</button>
-        <div class="product-title" data-editable contenteditable="false">Product Delta</div>
-        <div class="product-desc" data-editable contenteditable="false">Description for Product Delta. Mention key differentiators, target market, or version number here.</div>
+        <div class="product-title" data-editable="" contenteditable="false">Product Delta</div>
+        <div class="product-desc" data-editable="" contenteditable="false">Description for Product Delta. Mention key differentiators, target market, or version number here.</div>
         <div class="product-footer">
           <a class="attachment-link" href="#" target="_blank" rel="noopener">
-            <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4.5 3A2.5 2.5 0 0 0 2 5.5v6A2.5 2.5 0 0 0 4.5 14h7A2.5 2.5 0 0 0 14 11.5V7.707a1 1 0 0 0-.293-.707L10.293 3.5A1 1 0 0 0 9.586 3H4.5zm5.086 1L13 7.414V11.5a1 1 0 0 1-1 1h-7a1 1 0 0 1-1-1v-6A1 1 0 0 1 4.5 4h5.086zM9 4v3.5a.5.5 0 0 0 .5.5H13"/></svg>
+            <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4.5 3A2.5 2.5 0 0 0 2 5.5v6A2.5 2.5 0 0 0 4.5 14h7A2.5 2.5 0 0 0 14 11.5V7.707a1 1 0 0 0-.293-.707L10.293 3.5A1 1 0 0 0 9.586 3H4.5zm5.086 1L13 7.414V11.5a1 1 0 0 1-1 1h-7a1 1 0 0 1-1-1v-6A1 1 0 0 1 4.5 4h5.086zM9 4v3.5a.5.5 0 0 0 .5.5H13"></path></svg>
             View Attachment
           </a>
-          <span class="product-tag" data-editable contenteditable="false">PDF</span>
+          <span class="product-tag" data-editable="" contenteditable="false">PDF</span>
         </div>
       </div>
 
-      <div class="product-card reveal" data-index="05">
+      <div class="product-card reveal in-view" data-index="05">
         <button class="btn-delete-card" title="Delete" aria-label="Delete">✕</button>
-        <div class="product-title" data-editable contenteditable="false">Product Epsilon</div>
-        <div class="product-desc" data-editable contenteditable="false">A short, punchy description of Product Epsilon. What problem does it solve? Who is it for?</div>
+        <div class="product-title" data-editable="" contenteditable="false">Product Epsilon</div>
+        <div class="product-desc" data-editable="" contenteditable="false">A short, punchy description of Product Epsilon. What problem does it solve? Who is it for?</div>
         <div class="product-footer">
           <a class="attachment-link" href="#" target="_blank" rel="noopener">
-            <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4.5 3A2.5 2.5 0 0 0 2 5.5v6A2.5 2.5 0 0 0 4.5 14h7A2.5 2.5 0 0 0 14 11.5V7.707a1 1 0 0 0-.293-.707L10.293 3.5A1 1 0 0 0 9.586 3H4.5zm5.086 1L13 7.414V11.5a1 1 0 0 1-1 1h-7a1 1 0 0 1-1-1v-6A1 1 0 0 1 4.5 4h5.086zM9 4v3.5a.5.5 0 0 0 .5.5H13"/></svg>
+            <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4.5 3A2.5 2.5 0 0 0 2 5.5v6A2.5 2.5 0 0 0 4.5 14h7A2.5 2.5 0 0 0 14 11.5V7.707a1 1 0 0 0-.293-.707L10.293 3.5A1 1 0 0 0 9.586 3H4.5zm5.086 1L13 7.414V11.5a1 1 0 0 1-1 1h-7a1 1 0 0 1-1-1v-6A1 1 0 0 1 4.5 4h5.086zM9 4v3.5a.5.5 0 0 0 .5.5H13"></path></svg>
             View Attachment
           </a>
-          <span class="product-tag" data-editable contenteditable="false">IMG</span>
+          <span class="product-tag" data-editable="" contenteditable="false">IMG</span>
         </div>
       </div>
 
-      <div class="product-card reveal" data-index="06">
+      <div class="product-card reveal in-view" data-index="06">
         <button class="btn-delete-card" title="Delete" aria-label="Delete">✕</button>
-        <div class="product-title" data-editable contenteditable="false">Product Zeta</div>
-        <div class="product-desc" data-editable contenteditable="false">Brief overview of Product Zeta — dimensions, material, compatibility, or any notable spec.</div>
+        <div class="product-title" data-editable="" contenteditable="false">Product Zeta</div>
+        <div class="product-desc" data-editable="" contenteditable="false">Brief overview of Product Zeta — dimensions, material, compatibility, or any notable spec.</div>
         <div class="product-footer">
           <a class="attachment-link" href="#" target="_blank" rel="noopener">
-            <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4.5 3A2.5 2.5 0 0 0 2 5.5v6A2.5 2.5 0 0 0 4.5 14h7A2.5 2.5 0 0 0 14 11.5V7.707a1 1 0 0 0-.293-.707L10.293 3.5A1 1 0 0 0 9.586 3H4.5zm5.086 1L13 7.414V11.5a1 1 0 0 1-1 1h-7a1 1 0 0 1-1-1v-6A1 1 0 0 1 4.5 4h5.086zM9 4v3.5a.5.5 0 0 0 .5.5H13"/></svg>
+            <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4.5 3A2.5 2.5 0 0 0 2 5.5v6A2.5 2.5 0 0 0 4.5 14h7A2.5 2.5 0 0 0 14 11.5V7.707a1 1 0 0 0-.293-.707L10.293 3.5A1 1 0 0 0 9.586 3H4.5zm5.086 1L13 7.414V11.5a1 1 0 0 1-1 1h-7a1 1 0 0 1-1-1v-6A1 1 0 0 1 4.5 4h5.086zM9 4v3.5a.5.5 0 0 0 .5.5H13"></path></svg>
             View Attachment
           </a>
-          <span class="product-tag" data-editable contenteditable="false">ZIP</span>
+          <span class="product-tag" data-editable="" contenteditable="false">ZIP</span>
         </div>
       </div>
 
       <button class="btn-add-product" data-col="2">
-        <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2z"/></svg>
+        <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2z"></path></svg>
         Add Product
       </button>
     </div>
@@ -1158,207 +1294,51 @@
     <!-- COLUMN 3 -->
     <div class="column" id="col-3" data-col="3">
       <div class="column-header">
-        <span class="column-title" data-editable contenteditable="false">Category C</span>
+        <span class="column-title" data-editable="" contenteditable="false">Category C</span>
         <span class="column-badge">3</span>
       </div>
 
-      <div class="product-card reveal" data-index="07">
+      <div class="product-card reveal in-view" data-index="07">
         <button class="btn-delete-card" title="Delete" aria-label="Delete">✕</button>
-        <div class="product-title" data-editable contenteditable="false">Product Eta</div>
-        <div class="product-desc" data-editable contenteditable="false">Description of Product Eta. Keep language direct and benefit-driven for maximum impact.</div>
+        <div class="product-title" data-editable="" contenteditable="false">Product Eta</div>
+        <div class="product-desc" data-editable="" contenteditable="false">Description of Product Eta. Keep language direct and benefit-driven for maximum impact.</div>
         <div class="product-footer">
           <a class="attachment-link" href="#" target="_blank" rel="noopener">
-            <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4.5 3A2.5 2.5 0 0 0 2 5.5v6A2.5 2.5 0 0 0 4.5 14h7A2.5 2.5 0 0 0 14 11.5V7.707a1 1 0 0 0-.293-.707L10.293 3.5A1 1 0 0 0 9.586 3H4.5zm5.086 1L13 7.414V11.5a1 1 0 0 1-1 1h-7a1 1 0 0 1-1-1v-6A1 1 0 0 1 4.5 4h5.086zM9 4v3.5a.5.5 0 0 0 .5.5H13"/></svg>
+            <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4.5 3A2.5 2.5 0 0 0 2 5.5v6A2.5 2.5 0 0 0 4.5 14h7A2.5 2.5 0 0 0 14 11.5V7.707a1 1 0 0 0-.293-.707L10.293 3.5A1 1 0 0 0 9.586 3H4.5zm5.086 1L13 7.414V11.5a1 1 0 0 1-1 1h-7a1 1 0 0 1-1-1v-6A1 1 0 0 1 4.5 4h5.086zM9 4v3.5a.5.5 0 0 0 .5.5H13"></path></svg>
             View Attachment
           </a>
-          <span class="product-tag" data-editable contenteditable="false">PDF</span>
+          <span class="product-tag" data-editable="" contenteditable="false">PDF</span>
         </div>
       </div>
 
-      <div class="product-card reveal" data-index="08">
+      <div class="product-card reveal in-view" data-index="08">
         <button class="btn-delete-card" title="Delete" aria-label="Delete">✕</button>
-        <div class="product-title" data-editable contenteditable="false">Product Theta</div>
-        <div class="product-desc" data-editable contenteditable="false">Overview for Product Theta. Include a compelling one-liner about what makes this stand out.</div>
+        <div class="product-title" data-editable="" contenteditable="false">Product Theta</div>
+        <div class="product-desc" data-editable="" contenteditable="false">Overview for Product Theta. Include a compelling one-liner about what makes this stand out.</div>
         <div class="product-footer">
           <a class="attachment-link" href="#" target="_blank" rel="noopener">
-            <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4.5 3A2.5 2.5 0 0 0 2 5.5v6A2.5 2.5 0 0 0 4.5 14h7A2.5 2.5 0 0 0 14 11.5V7.707a1 1 0 0 0-.293-.707L10.293 3.5A1 1 0 0 0 9.586 3H4.5zm5.086 1L13 7.414V11.5a1 1 0 0 1-1 1h-7a1 1 0 0 1-1-1v-6A1 1 0 0 1 4.5 4h5.086zM9 4v3.5a.5.5 0 0 0 .5.5H13"/></svg>
+            <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4.5 3A2.5 2.5 0 0 0 2 5.5v6A2.5 2.5 0 0 0 4.5 14h7A2.5 2.5 0 0 0 14 11.5V7.707a1 1 0 0 0-.293-.707L10.293 3.5A1 1 0 0 0 9.586 3H4.5zm5.086 1L13 7.414V11.5a1 1 0 0 1-1 1h-7a1 1 0 0 1-1-1v-6A1 1 0 0 1 4.5 4h5.086zM9 4v3.5a.5.5 0 0 0 .5.5H13"></path></svg>
             View Attachment
           </a>
-          <span class="product-tag" data-editable contenteditable="false">DOC</span>
+          <span class="product-tag" data-editable="" contenteditable="false">DOC</span>
         </div>
       </div>
 
-      <div class="product-card reveal" data-index="09">
+      <div class="product-card reveal in-view" data-index="09">
         <button class="btn-delete-card" title="Delete" aria-label="Delete">✕</button>
-        <div class="product-title" data-editable contenteditable="false">Product Iota</div>
-        <div class="product-desc" data-editable contenteditable="false">Final description for Product Iota. Use this card as a template when adding more products.</div>
+        <div class="product-title" data-editable="" contenteditable="false">Product Iota</div>
+        <div class="product-desc" data-editable="" contenteditable="false">Final description for Product Iota. Use this card as a template when adding more products.</div>
         <div class="product-footer">
           <a class="attachment-link" href="#" target="_blank" rel="noopener">
-            <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4.5 3A2.5 2.5 0 0 0 2 5.5v6A2.5 2.5 0 0 0 4.5 14h7A2.5 2.5 0 0 0 14 11.5V7.707a1 1 0 0 0-.293-.707L10.293 3.5A1 1 0 0 0 9.586 3H4.5zm5.086 1L13 7.414V11.5a1 1 0 0 1-1 1h-7a1 1 0 0 1-1-1v-6A1 1 0 0 1 4.5 4h5.086zM9 4v3.5a.5.5 0 0 0 .5.5H13"/></svg>
+            <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4.5 3A2.5 2.5 0 0 0 2 5.5v6A2.5 2.5 0 0 0 4.5 14h7A2.5 2.5 0 0 0 14 11.5V7.707a1 1 0 0 0-.293-.707L10.293 3.5A1 1 0 0 0 9.586 3H4.5zm5.086 1L13 7.414V11.5a1 1 0 0 1-1 1h-7a1 1 0 0 1-1-1v-6A1 1 0 0 1 4.5 4h5.086zM9 4v3.5a.5.5 0 0 0 .5.5H13"></path></svg>
             View Attachment
           </a>
-          <span class="product-tag" data-editable contenteditable="false">PDF</span>
+          <span class="product-tag" data-editable="" contenteditable="false">PDF</span>
         </div>
       </div>
 
       <button class="btn-add-product" data-col="3">
-        <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2z"/></svg>
-        Add Product
-      </button>
-    </div>
-
-    <!-- COLUMN 4 -->
-    <div class="column" id="col-4" data-col="4">
-      <div class="column-header">
-        <span class="column-title" data-editable contenteditable="false">Category D</span>
-        <span class="column-badge">3</span>
-      </div>
-
-      <div class="product-card reveal" data-index="10">
-        <button class="btn-delete-card" title="Delete" aria-label="Delete">✕</button>
-        <div class="product-title" data-editable contenteditable="false">Product Kappa</div>
-        <div class="product-desc" data-editable contenteditable="false">Description of Product Kappa. Highlight key features, specs, or benefits in a sentence or two.</div>
-        <div class="product-footer">
-          <a class="attachment-link" href="#" target="_blank" rel="noopener">
-            <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4.5 3A2.5 2.5 0 0 0 2 5.5v6A2.5 2.5 0 0 0 4.5 14h7A2.5 2.5 0 0 0 14 11.5V7.707a1 1 0 0 0-.293-.707L10.293 3.5A1 1 0 0 0 9.586 3H4.5zm5.086 1L13 7.414V11.5a1 1 0 0 1-1 1h-7a1 1 0 0 1-1-1v-6A1 1 0 0 1 4.5 4h5.086zM9 4v3.5a.5.5 0 0 0 .5.5H13"/></svg>
-            View Attachment
-          </a>
-          <span class="product-tag" data-editable contenteditable="false">PDF</span>
-        </div>
-      </div>
-
-      <div class="product-card reveal" data-index="11">
-        <button class="btn-delete-card" title="Delete" aria-label="Delete">✕</button>
-        <div class="product-title" data-editable contenteditable="false">Product Lambda</div>
-        <div class="product-desc" data-editable contenteditable="false">Short description of Product Lambda. Mention pricing tier, compatibility, or target audience here.</div>
-        <div class="product-footer">
-          <a class="attachment-link" href="#" target="_blank" rel="noopener">
-            <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4.5 3A2.5 2.5 0 0 0 2 5.5v6A2.5 2.5 0 0 0 4.5 14h7A2.5 2.5 0 0 0 14 11.5V7.707a1 1 0 0 0-.293-.707L10.293 3.5A1 1 0 0 0 9.586 3H4.5zm5.086 1L13 7.414V11.5a1 1 0 0 1-1 1h-7a1 1 0 0 1-1-1v-6A1 1 0 0 1 4.5 4h5.086zM9 4v3.5a.5.5 0 0 0 .5.5H13"/></svg>
-            View Attachment
-          </a>
-          <span class="product-tag" data-editable contenteditable="false">DOC</span>
-        </div>
-      </div>
-
-      <div class="product-card reveal" data-index="12">
-        <button class="btn-delete-card" title="Delete" aria-label="Delete">✕</button>
-        <div class="product-title" data-editable contenteditable="false">Product Mu</div>
-        <div class="product-desc" data-editable contenteditable="false">Description of Product Mu. Keep it concise — one to three sentences works best for scannable cards.</div>
-        <div class="product-footer">
-          <a class="attachment-link" href="#" target="_blank" rel="noopener">
-            <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4.5 3A2.5 2.5 0 0 0 2 5.5v6A2.5 2.5 0 0 0 4.5 14h7A2.5 2.5 0 0 0 14 11.5V7.707a1 1 0 0 0-.293-.707L10.293 3.5A1 1 0 0 0 9.586 3H4.5zm5.086 1L13 7.414V11.5a1 1 0 0 1-1 1h-7a1 1 0 0 1-1-1v-6A1 1 0 0 1 4.5 4h5.086zM9 4v3.5a.5.5 0 0 0 .5.5H13"/></svg>
-            View Attachment
-          </a>
-          <span class="product-tag" data-editable contenteditable="false">XLS</span>
-        </div>
-      </div>
-
-      <button class="btn-add-product" data-col="4">
-        <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2z"/></svg>
-        Add Product
-      </button>
-    </div>
-
-    <!-- COLUMN 5 -->
-    <div class="column" id="col-5" data-col="5">
-      <div class="column-header">
-        <span class="column-title" data-editable contenteditable="false">Category E</span>
-        <span class="column-badge">3</span>
-      </div>
-
-      <div class="product-card reveal" data-index="13">
-        <button class="btn-delete-card" title="Delete" aria-label="Delete">✕</button>
-        <div class="product-title" data-editable contenteditable="false">Product Nu</div>
-        <div class="product-desc" data-editable contenteditable="false">Description of Product Nu. Highlight key features, specs, or benefits in a sentence or two.</div>
-        <div class="product-footer">
-          <a class="attachment-link" href="#" target="_blank" rel="noopener">
-            <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4.5 3A2.5 2.5 0 0 0 2 5.5v6A2.5 2.5 0 0 0 4.5 14h7A2.5 2.5 0 0 0 14 11.5V7.707a1 1 0 0 0-.293-.707L10.293 3.5A1 1 0 0 0 9.586 3H4.5zm5.086 1L13 7.414V11.5a1 1 0 0 1-1 1h-7a1 1 0 0 1-1-1v-6A1 1 0 0 1 4.5 4h5.086zM9 4v3.5a.5.5 0 0 0 .5.5H13"/></svg>
-            View Attachment
-          </a>
-          <span class="product-tag" data-editable contenteditable="false">PDF</span>
-        </div>
-      </div>
-
-      <div class="product-card reveal" data-index="14">
-        <button class="btn-delete-card" title="Delete" aria-label="Delete">✕</button>
-        <div class="product-title" data-editable contenteditable="false">Product Xi</div>
-        <div class="product-desc" data-editable contenteditable="false">Short description of Product Xi. Mention pricing tier, compatibility, or target audience here.</div>
-        <div class="product-footer">
-          <a class="attachment-link" href="#" target="_blank" rel="noopener">
-            <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4.5 3A2.5 2.5 0 0 0 2 5.5v6A2.5 2.5 0 0 0 4.5 14h7A2.5 2.5 0 0 0 14 11.5V7.707a1 1 0 0 0-.293-.707L10.293 3.5A1 1 0 0 0 9.586 3H4.5zm5.086 1L13 7.414V11.5a1 1 0 0 1-1 1h-7a1 1 0 0 1-1-1v-6A1 1 0 0 1 4.5 4h5.086zM9 4v3.5a.5.5 0 0 0 .5.5H13"/></svg>
-            View Attachment
-          </a>
-          <span class="product-tag" data-editable contenteditable="false">DOC</span>
-        </div>
-      </div>
-
-      <div class="product-card reveal" data-index="15">
-        <button class="btn-delete-card" title="Delete" aria-label="Delete">✕</button>
-        <div class="product-title" data-editable contenteditable="false">Product Omicron</div>
-        <div class="product-desc" data-editable contenteditable="false">Description of Product Omicron. Keep it concise — one to three sentences works best.</div>
-        <div class="product-footer">
-          <a class="attachment-link" href="#" target="_blank" rel="noopener">
-            <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4.5 3A2.5 2.5 0 0 0 2 5.5v6A2.5 2.5 0 0 0 4.5 14h7A2.5 2.5 0 0 0 14 11.5V7.707a1 1 0 0 0-.293-.707L10.293 3.5A1 1 0 0 0 9.586 3H4.5zm5.086 1L13 7.414V11.5a1 1 0 0 1-1 1h-7a1 1 0 0 1-1-1v-6A1 1 0 0 1 4.5 4h5.086zM9 4v3.5a.5.5 0 0 0 .5.5H13"/></svg>
-            View Attachment
-          </a>
-          <span class="product-tag" data-editable contenteditable="false">XLS</span>
-        </div>
-      </div>
-
-      <button class="btn-add-product" data-col="5">
-        <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2z"/></svg>
-        Add Product
-      </button>
-    </div>
-
-    <!-- COLUMN 6 -->
-    <div class="column" id="col-6" data-col="6">
-      <div class="column-header">
-        <span class="column-title" data-editable contenteditable="false">Category F</span>
-        <span class="column-badge">3</span>
-      </div>
-
-      <div class="product-card reveal" data-index="16">
-        <button class="btn-delete-card" title="Delete" aria-label="Delete">✕</button>
-        <div class="product-title" data-editable contenteditable="false">Product Pi</div>
-        <div class="product-desc" data-editable contenteditable="false">Description of Product Pi. Highlight key features, specs, or benefits in a sentence or two.</div>
-        <div class="product-footer">
-          <a class="attachment-link" href="#" target="_blank" rel="noopener">
-            <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4.5 3A2.5 2.5 0 0 0 2 5.5v6A2.5 2.5 0 0 0 4.5 14h7A2.5 2.5 0 0 0 14 11.5V7.707a1 1 0 0 0-.293-.707L10.293 3.5A1 1 0 0 0 9.586 3H4.5zm5.086 1L13 7.414V11.5a1 1 0 0 1-1 1h-7a1 1 0 0 1-1-1v-6A1 1 0 0 1 4.5 4h5.086zM9 4v3.5a.5.5 0 0 0 .5.5H13"/></svg>
-            View Attachment
-          </a>
-          <span class="product-tag" data-editable contenteditable="false">PDF</span>
-        </div>
-      </div>
-
-      <div class="product-card reveal" data-index="17">
-        <button class="btn-delete-card" title="Delete" aria-label="Delete">✕</button>
-        <div class="product-title" data-editable contenteditable="false">Product Rho</div>
-        <div class="product-desc" data-editable contenteditable="false">Short description of Product Rho. Mention pricing tier, compatibility, or target audience here.</div>
-        <div class="product-footer">
-          <a class="attachment-link" href="#" target="_blank" rel="noopener">
-            <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4.5 3A2.5 2.5 0 0 0 2 5.5v6A2.5 2.5 0 0 0 4.5 14h7A2.5 2.5 0 0 0 14 11.5V7.707a1 1 0 0 0-.293-.707L10.293 3.5A1 1 0 0 0 9.586 3H4.5zm5.086 1L13 7.414V11.5a1 1 0 0 1-1 1h-7a1 1 0 0 1-1-1v-6A1 1 0 0 1 4.5 4h5.086zM9 4v3.5a.5.5 0 0 0 .5.5H13"/></svg>
-            View Attachment
-          </a>
-          <span class="product-tag" data-editable contenteditable="false">IMG</span>
-        </div>
-      </div>
-
-      <div class="product-card reveal" data-index="18">
-        <button class="btn-delete-card" title="Delete" aria-label="Delete">✕</button>
-        <div class="product-title" data-editable contenteditable="false">Product Sigma</div>
-        <div class="product-desc" data-editable contenteditable="false">Description of Product Sigma. Use this card as a template when adding more products.</div>
-        <div class="product-footer">
-          <a class="attachment-link" href="#" target="_blank" rel="noopener">
-            <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4.5 3A2.5 2.5 0 0 0 2 5.5v6A2.5 2.5 0 0 0 4.5 14h7A2.5 2.5 0 0 0 14 11.5V7.707a1 1 0 0 0-.293-.707L10.293 3.5A1 1 0 0 0 9.586 3H4.5zm5.086 1L13 7.414V11.5a1 1 0 0 1-1 1h-7a1 1 0 0 1-1-1v-6A1 1 0 0 1 4.5 4h5.086zM9 4v3.5a.5.5 0 0 0 .5.5H13"/></svg>
-            View Attachment
-          </a>
-          <span class="product-tag" data-editable contenteditable="false">ZIP</span>
-        </div>
-      </div>
-
-      <button class="btn-add-product" data-col="6">
-        <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2z"/></svg>
+        <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2z"></path></svg>
         Add Product
       </button>
     </div>
@@ -1368,57 +1348,57 @@
   <!-- ABOUT US SECTION -->
   <div class="about-section">
     <div class="section-meta">
-      <h2 data-editable contenteditable="false">ABOUT US</h2>
+      <h2 data-editable="" contenteditable="false">ABOUT US</h2>
       <div class="section-line"></div>
     </div>
 
-    <div class="about-box reveal">
+    <div class="about-box reveal in-view">
       <span class="about-edit-hint">✏ editable</span>
 
       <div class="about-left">
-        <div class="about-heading" data-editable contenteditable="false">TRILLION</div>
+        <div class="about-heading" data-editable="" contenteditable="false">TRILLION</div>
         <div>
-          <div class="about-founded-label" data-editable contenteditable="false">Est.</div>
-          <div class="about-founded-value" data-editable contenteditable="false">2010</div>
+          <div class="about-founded-label" data-editable="" contenteditable="false">Est.</div>
+          <div class="about-founded-value" data-editable="" contenteditable="false">2010</div>
         </div>
         <div class="about-stats">
           <div class="about-stat">
-            <span class="about-stat-value" data-editable contenteditable="false">200+</span>
-            <span class="about-stat-label" data-editable contenteditable="false">Clients Served</span>
+            <span class="about-stat-value" data-editable="" contenteditable="false">30+</span>
+            <span class="about-stat-label" data-editable="" contenteditable="false">Clients Served</span>
           </div>
           <div class="about-stat">
-            <span class="about-stat-value" data-editable contenteditable="false">50+</span>
-            <span class="about-stat-label" data-editable contenteditable="false">Team Members</span>
+            <span class="about-stat-value" data-editable="" contenteditable="false">10+</span>
+            <span class="about-stat-label" data-editable="" contenteditable="false">Team Members</span>
           </div>
           <div class="about-stat">
-            <span class="about-stat-value" data-editable contenteditable="false">15</span>
-            <span class="about-stat-label" data-editable contenteditable="false">Years in Business</span>
+            <span class="about-stat-value" data-editable="" contenteditable="false">15</span>
+            <span class="about-stat-label" data-editable="" contenteditable="false">Years in Business</span>
           </div>
         </div>
       </div>
 
       <div class="about-right">
-        <div class="about-bio" data-editable contenteditable="false">
+        <div class="about-bio" data-editable="" contenteditable="false">
           <p>Trillion Tech has been delivering premium industrial steel products and supply chain solutions since 2010. Founded on the principles of reliability and precision, we source high-grade steel directly from China and partner with businesses of all sizes to keep their operations running without delay.</p>
           <p>Our team of specialists brings deep expertise across steel trading, international logistics, and bulk export — ensuring every client receives expert guidance from first inquiry through final delivery.</p>
         </div>
         <div class="about-divider"></div>
         <div class="about-pillars">
           <div class="about-pillar">
-            <span class="about-pillar-title" data-editable contenteditable="false">Our Mission</span>
-            <span class="about-pillar-text" data-editable contenteditable="false">To provide dependable products and transparent service that our clients can build their business on.</span>
+            <span class="about-pillar-title" data-editable="" contenteditable="false">Our Mission</span>
+            <span class="about-pillar-text" data-editable="" contenteditable="false">To provide dependable products and transparent service that our clients can build their business on.</span>
           </div>
           <div class="about-pillar">
-            <span class="about-pillar-title" data-editable contenteditable="false">Quality First</span>
-            <span class="about-pillar-text" data-editable contenteditable="false">Every product we carry is vetted against strict standards before it ever reaches a customer's hands.</span>
+            <span class="about-pillar-title" data-editable="" contenteditable="false">Quality First</span>
+            <span class="about-pillar-text" data-editable="" contenteditable="false">Every product we carry is vetted against strict standards before it ever reaches a customer's hands.</span>
           </div>
           <div class="about-pillar">
-            <span class="about-pillar-title" data-editable contenteditable="false">Fast Delivery</span>
-            <span class="about-pillar-text" data-editable contenteditable="false">We maintain ready stock and established logistics partnerships to keep lead times short and predictable.</span>
+            <span class="about-pillar-title" data-editable="" contenteditable="false">Fast Delivery</span>
+            <span class="about-pillar-text" data-editable="" contenteditable="false">We maintain ready stock and established logistics partnerships to keep lead times short and predictable.</span>
           </div>
           <div class="about-pillar">
-            <span class="about-pillar-title" data-editable contenteditable="false">Expert Support</span>
-            <span class="about-pillar-text" data-editable contenteditable="false">Our team is available Monday to Friday to answer technical questions, handle orders, and resolve issues swiftly.</span>
+            <span class="about-pillar-title" data-editable="" contenteditable="false">Expert Support</span>
+            <span class="about-pillar-text" data-editable="" contenteditable="false">Our team is available Monday to Friday to answer technical questions, handle orders, and resolve issues swiftly.</span>
           </div>
         </div>
       </div>
@@ -1427,8 +1407,8 @@
 
   <!-- FOOTER -->
   <footer>
-    <span class="footer-brand" id="footer-brand" data-editable contenteditable="false">TRILLION TECH</span>
-    <span class="footer-note" data-editable contenteditable="false">Static site hosted on GitHub Pages · Built with HTML / CSS / JS</span>
+    <span class="footer-brand" id="footer-brand" data-editable="" contenteditable="false">TRILLION TECH</span>
+    <span class="footer-note" data-editable="" contenteditable="false">Static site hosted on GitHub Pages · Built with HTML / CSS / JS</span>
   </footer>
 
 </div><!-- /.site-wrapper -->
@@ -1461,7 +1441,7 @@
   // ── STATE ────────────────────────────────────────────────────
   let isEditMode      = false;
   let showingLoginBox = false;
-  let productCounter  = 18;
+  let productCounter  = 9;
 
   // ── UNIVERSAL EDITABLE TOGGLE ─────────────────────────────────
   // One selector covers EVERY element with data-editable — no
@@ -1477,7 +1457,7 @@
     const total = document.querySelectorAll('.product-card').length;
     document.getElementById('product-count').textContent =
       total + ' item' + (total !== 1 ? 's' : '');
-    [1, 2, 3, 4, 5, 6].forEach(n => {
+    [1, 2, 3].forEach(n => {
       const col   = document.getElementById('col-' + n);
       const badge = col ? col.querySelector('.column-badge') : null;
       if (badge) badge.textContent = col.querySelectorAll('.product-card').length;
@@ -1596,7 +1576,50 @@
     }
   });
 
-  // Helper: select all text in a contenteditable element
+  // ── ADD / DELETE ADDRESS ─────────────────────────────────────
+  function newAddressHTML() {
+    return `
+      <div class="address-item">
+        <button class="btn-delete-address" title="Remove address" aria-label="Remove">✕</button>
+        <span class="address-pin">
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M8 0a5 5 0 0 0-5 5c0 3.5 5 11 5 11s5-7.5 5-11a5 5 0 0 0-5-5zm0 7.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/>
+          </svg>
+        </span>
+        <div class="address-text">
+          <span class="address-tag" data-editable contenteditable="true">Location</span>
+          <span class="address-value" data-editable contenteditable="true">Enter address here…</span>
+        </div>
+      </div>`;
+  }
+
+  document.getElementById('btn-add-address').addEventListener('click', () => {
+    if (!isEditMode) return;
+    const list = document.getElementById('address-list');
+    const temp = document.createElement('div');
+    temp.innerHTML = newAddressHTML();
+    const item = temp.firstElementChild;
+    list.appendChild(item);
+    // Auto-focus the tag field of the new item
+    const tag = item.querySelector('.address-tag');
+    if (tag) { tag.focus(); selectAll(tag); }
+  });
+
+  document.getElementById('address-list').addEventListener('click', e => {
+    if (e.target.closest('.btn-delete-address') && isEditMode) {
+      const item = e.target.closest('.address-item');
+      if (item) {
+        const remaining = document.querySelectorAll('.address-item').length;
+        if (remaining <= 1) {
+          alert('You need at least one address.');
+          return;
+        }
+        if (confirm('Remove this address?')) item.remove();
+      }
+    }
+  });
+
+
   function selectAll(el) {
     const range = document.createRange();
     range.selectNodeContents(el);
@@ -1620,5 +1643,7 @@
   updateProductCount();
 </script>
 
-</body>
-</html>
+
+
+
+</body></html>
