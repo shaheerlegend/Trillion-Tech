@@ -142,6 +142,22 @@
 
     .top-bar__logo span { color: var(--accent); }
 
+    /* ── BRAND GROUP (logo mark + wordmark) ─── */
+    .top-bar__brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .top-bar__logo-svg {
+      height: 42px;
+      width: 42px;
+      max-height: 42px;
+      flex-shrink: 0;
+      display: block;
+      border-radius: 6px;
+    }
+
     .top-bar__right { position: relative; }
 
     /* ── ADMIN TOGGLE BUTTON ─── */
@@ -1052,6 +1068,7 @@
       .top-bar { padding: 10px 16px; }
       .site-wrapper { padding: 0 16px 60px; }
       #admin-login-box { right: -16px; min-width: 220px; }
+      .top-bar__logo-svg { height: 34px; width: 34px; max-height: 34px; }
     }
   </style>
 </head>
@@ -1074,7 +1091,20 @@
 
 <!-- TOP NAVIGATION BAR -->
 <nav class="top-bar">
-  <div class="top-bar__logo" data-editable="" contenteditable="false">TRILLION TECH</div>
+  <div class="top-bar__brand">
+    <svg class="top-bar__logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" role="img" aria-label="Trillion Tech logo">
+      <rect width="500" height="500" fill="#0D0F12"/>
+      <g transform="translate(250, 210)">
+        <polygon points="0,-110 95,-55 0,0 -95,-55" fill="#E2E8F0" stroke="#FFFFFF" stroke-width="1"/>
+        <polygon points="0,0 95,-55 95,55 0,110" fill="#94A3B8" stroke="#64748B" stroke-width="1"/>
+        <polygon points="-95,-55 0,0 0,110 -95,55" fill="#475569" stroke="#334155" stroke-width="1"/>
+        <polygon points="-40,-23 0,0 0,50 -40,27" fill="#00E5FF" opacity="0.7" />
+      </g>
+      <text x="250" y="395" font-family="'Impact', 'Arial Black', sans-serif" font-weight="bold" font-size="40" fill="#F8FAFC" text-anchor="middle" letter-spacing="2">TRILLION TECH</text>
+      <text x="250" y="425" font-family="Arial, sans-serif" font-weight="bold" font-size="12" fill="#64748B" text-anchor="middle" letter-spacing="8">DIRECT BULK IMPORT</text>
+    </svg>
+    <div class="top-bar__logo" data-editable="" contenteditable="false">TRILLION TECH</div>
+  </div>
   <div class="top-bar__right">
     <button id="admin-toggle-btn" aria-expanded="false" class="">
       <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor">
